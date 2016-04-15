@@ -17,7 +17,6 @@ case "$1" in
 Skins will be downloaded into '"$SysPath";fi
                 if [[  ! -z "$2" ]];then
                 SkinsToGet=(${@:2});
-                BB=($SkinsToGet)
 echo ${#SkinsToGet[@]}
                 for I in "${SkinsToGet[@]}";do
                 DName=$(dirname "/${I}")
